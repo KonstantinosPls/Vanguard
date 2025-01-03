@@ -2,6 +2,9 @@ Vanguard is a non profitable website made by a team of Computer Science students
 
 Team leader : 
 - Alexios Kalmpouros
+
+
+  
 Team members:
 -Kriton Panigyris
 -Argyris Papoutsogiannopoulos
