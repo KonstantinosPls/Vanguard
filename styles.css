@@ -620,3 +620,70 @@ header h1 {
     color: antiquewhite;
 
 }
+
+/* STORE PAGE STYLESHEET */
+
+.store-banner {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #333;
+    color: #fff;
+    opacity: 90%;
+}
+
+.store-banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.store-banner p {
+    font-size: 1.2em;
+}
+
+/* GAMES LIST  */
+.game-grid {
+    display:grid;
+    gap: 50px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.game-slot {
+    background-color: #555;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    opacity: 95%;
+}
+
+.game-slot:hover {
+    transform: translateY(-10px);
+}
+
+.game-slot a {
+    text-decoration: none;
+    color: #333;
+}
+
+.game-slot img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.game-info {
+    padding: 15px;
+}
+
+.game-info h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: lightsalmon;
+}
+
+.game-info p {
+    font-size: 0.9em;
+    color:antiquewhite;
+}
