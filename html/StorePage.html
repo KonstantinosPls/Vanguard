@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanguard</title>
     <link rel="icon" type="image/x-icon" href="v.jpg">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../other/styles.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="index.html">Vanguard</a>
+            <a href="../index.html">Vanguard</a>
         </div>
         <nav>
             <a href="StorePage.html">Store</a>
-            <a href="#">Library</a>
+            <a href="cart.html">Cart</a>
             <a href="Community.html">Community</a>
             <a href="settings.html">Settings</a>
         </nav>
     </header>
 
+    <div class="search-container">
+        <input type="text" id="gameSearch" placeholder="Search for a game" oninput="searchGame()" />
+    </div>
+    
     <div>
         <section class="store-banner">
             <h1 style="color: lightsalmon;">Welcome to Vanguard Store</h1>
@@ -29,7 +33,7 @@
         <section class="game-grid">
             <div class="game-slot">
                 <a href="WhenDutyCalls.html">
-                    <img src="WhenDutyCallsphotos/whendutycallsprofile.webp"  alt="When Duty Calls">
+                    <img src="../images/whendutycallsprofile.webp" alt="When Duty Calls">
                     <div class="game-info">
                         <h3>When Duty Calls</h3>
                         <p>A fast-paced single/multi player shooter game.</p>
@@ -39,8 +43,8 @@
             </div>
 
             <div class="game-slot">
-                <a href="game2.html">
-                    <img src="game2.jpg" alt="Commanding Conquerors">
+                <a href="CommandingConquerorsgame.html">
+                    <img src="../images/commandingconquerorsprofile.jpg" alt="Commanding Conquerors">
                     <div class="game-info">
                         <h3>Commanding Conquerors</h3>
                         <p>The ultimate real-time strategy experience.</p>
@@ -51,7 +55,7 @@
 
             <div class="game-slot">
                 <a href="HonorAmongThieves.html">
-                    <img src="HonorAmongThieves/dnd cover.jpeg" alt="Honor Among Thieves">
+                    <img src="../images/dnd cover.jpeg" alt="Honor Among Thieves">
                     <div class="game-info">
                         <h3>Honor Among Thieves</h3>
                         <p>An immersive Dragons and Dungeons game with rich storytelling.</p>
@@ -105,12 +109,12 @@
             </div>
 
             <div class="game-slot">
-                <a href="game8.html">
-                    <img src="game8.jpg" alt="Cold Wheels">
+                <a href="ColdWheels.html">
+                    <img src="../images/coldwheelsprofile.jpg" alt="Cold Wheels">
                     <div class="game-info">
                         <h3>Cold Wheels</h3>
                         <p>An arcade racing game inspired from the TV cartoons we all love.</p>
-                        <p>Price: <del>$19.99</del> $9.99</p>
+                        <p>Price: <del>$49.99</del> $24.99</p>
                     </div>
                 </a>
             </div>
@@ -122,5 +126,31 @@
         <p>&copy; 2025 Vanguard. All rights reserved.</p>
         <p><a href="PrivacyPolicy.html">Privacy Policy</a> | <a href="TermsofService.html">Terms of Service</a></p>
     </footer>
+
+    <script>
+        function searchGame() {
+            let input = document.getElementById('gameSearch').value.toLowerCase();
+            let gameSlots = document.querySelectorAll('.game-slot');
+            let found = false;
+
+            gameSlots.forEach(slot => {
+                let gameTitle = slot.querySelector('h3').innerText.toLowerCase();
+                if (gameTitle.includes(input)) {
+                    slot.style.display = 'block';
+                    found = true;
+                } else {
+                    slot.style.display = 'none';
+                }
+            });
+
+            // If no games match, hide the game grid entirely
+            if (!found && input.length > 0) {
+                document.getElementById('gameGrid').style.display = 'none';
+            } else {
+                document.getElementById('gameGrid').style.display = 'grid';
+            }
+        }
+    </script>
+   
 </body>
 </html>

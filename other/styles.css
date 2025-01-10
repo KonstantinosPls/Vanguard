@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0 auto;
     padding: 0;
-    background-image: url(background.png);
+    background-image:url('../images/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: #fdfeff;
@@ -51,9 +51,8 @@ header a:hover {
 
 }
 .game-list {
-    object-position: center;
+    text-align: center;
     display: flex;
-    flex-wrap: wrap;
     margin-left: 640px;
     gap: 120px;
 }
@@ -318,9 +317,9 @@ header h1 {
     font-size: 36px;
     margin: 0;
 }
-.hero {
+.bigbanner {
     opacity: 90%;
-    background: url('HonorAmongThieves/hero-banner.webp') center/cover no-repeat;
+    background: url('../images/hero-banner.webp') center/cover no-repeat;
     height: 400px;
     color: #fff;
     display: flex;
@@ -328,7 +327,7 @@ header h1 {
     align-items: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
-.hero h2 {
+.bigbanner h2 {
     font-size: 50px;
     text-transform: uppercase;
 }
@@ -393,10 +392,10 @@ header h1 {
     background-color: #47a957;
 }
 /* When Duty Calls stylesheet */
-.hero2 {
+.bigbanner2 {
     font-size: 30px;
     opacity: 90%;
-    background: url('WhenDutyCallsphotos/WhenDutyCallsbanner.jpg') center/cover no-repeat;
+    background: url('../images/WhenDutyCallsbanner.jpg') center/cover no-repeat;
     height: 400px;
     color: #fff;
     display: flex;
@@ -405,8 +404,33 @@ header h1 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
+/* Commanding Conquerors stylesheet */
 
-/* PROFILE STYLESHEET */
+.bigbanner3 {
+    font-size: 30px;
+    opacity: 90%;
+    background: url('../images/commandingconquerorsbanner.jpg') center/cover no-repeat;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Cold Wheels stylesheet */
+.bigbanner4 {
+    font-size: 30px;
+    opacity: 90%;
+    background: url('../images/coldwheelsbanner.jpg') center/cover no-repeat;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+/* KostasPls PROFILE STYLESHEET */
 
 .profile-container {
     opacity: 90%;
@@ -427,8 +451,8 @@ header h1 {
 }
 
 .profile-banner img {
-    width: 100%;
-    height: 220px;
+    width: 1200px;
+    height: 400px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -639,6 +663,40 @@ header h1 {
 .store-banner p {
     font-size: 1.2em;
 }
+
+/* SEARCH BAR STYLE */
+
+.search-container {
+    text-align: left;
+    padding: 20px;
+    background-color: #333;
+    opacity: 90%;
+}
+
+.search-container input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #e55b00;
+}
+
+
 
 /* GAMES LIST  */
 .game-grid {
