@@ -1,33 +1,53 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0 auto;
-    padding: 0;
+    display: flow-root;
     background-image:url('../images/background.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
     color: #fdfeff;
 }
 .logo {
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+    bottom: 10px;
+    margin: auto;
     text-decoration: none;
-    font-size: 25px;
-    margin: 0;
+    text-align: center;
 }
+#imglogo{
+    position: absolute;
+    left: 80px;
+    bottom: 38px;
+}
+
 header {
-    opacity:75%;
-    background-color: #2e2f32;
-    padding: 15px;
+    background-color: #171a21;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header a {
+nav a {
+    font-size: medium;
+    font-weight: bold;
     color: #c7d5e0;
     text-decoration: none;
-    margin: 0 15px;
+    padding: 3px;
 }
-header a:hover {
+nav a:hover {
+    color: #986950;
     text-decoration: underline;
+}
+
+video{
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
 }
 
 .containerindex{
@@ -40,6 +60,7 @@ header a:hover {
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
+    text-align: center;
 }
 .reviews{
     display: flexbox;
@@ -48,13 +69,29 @@ header a:hover {
     color: #363536;
     flex-direction: row;
     border-radius: 50%;
+}
+#bestGame{
+    float: left;
+    width: 392px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
 
+#salesBox{
+    border: 2px solid;
+    border-color: #1b1b1b;
+}
+#winterSale{
+    width: 50%;
+    height: 463px;
+    float: left;
+    display: block;
+    margin: auto;
 }
 .game-list {
     text-align: center;
-    display: flex;
-    margin-left: 640px;
-    gap: 120px;
+    display: block;
+    margin: auto;
 }
 .game {
     background: #1b2838;
@@ -79,7 +116,8 @@ header a:hover {
     margin: 0;
 }
 footer {
-    background-color: #171a21;
+    background-color: #1b1b1b;
+    opacity:96%;
     text-align: center;
     padding: 10px;
     margin-top: 20px;
@@ -87,6 +125,10 @@ footer {
 footer a {
     color: #55c57a;
     text-decoration: none;
+}
+footer i {
+    padding: 10px;
+    color: white;
 }
 /* Settings stylesheet */
 h1 {
