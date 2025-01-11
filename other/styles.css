@@ -8,10 +8,16 @@ body {
     color: #fdfeff;
 }
 .logo {
-    text-decoration: none;
     font-size: 25px;
-    margin: 0;
+    position: relative;
+    bottom: 10px;
 }
+
+#imglogo{
+    position: relative;
+    top: 10px;
+}
+
 header {
     opacity:75%;
     background-color: #2e2f32;
