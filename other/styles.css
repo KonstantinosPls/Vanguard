@@ -40,8 +40,7 @@ nav a {
 }
 nav a:hover {
     color: #986950;
-    text-decoration: 
-    underline;
+    text-decoration: underline;
 }
 
 video{
@@ -61,6 +60,7 @@ video{
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
+    text-align: center;
 }
 .reviews{
     display: flexbox;
@@ -69,8 +69,14 @@ video{
     color: #363536;
     flex-direction: row;
     border-radius: 50%;
-
 }
+#bestGame{
+    float: left;
+    width: 392px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
 #salesBox{
     border: 2px solid;
     border-color: #1b1b1b;
