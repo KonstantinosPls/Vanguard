@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0 auto;
-    padding: 0;
+    display: flow-root;
     background-image:url('../images/background.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,13 +18,13 @@ body {
     text-align: center;
 }
 #imglogo{
-    position: relative;
-    top: 10px;
+    position: absolute;
+    left: 80px;
+    bottom: 38px;
 }
 
 header {
-    background-color: #1b1b1b;
-    opacity:96%;
+    background-color: #171a21;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -72,11 +71,21 @@ video{
     border-radius: 50%;
 
 }
+#salesBox{
+    border: 2px solid;
+    border-color: #1b1b1b;
+}
+#winterSale{
+    width: 50%;
+    height: 463px;
+    float: left;
+    display: block;
+    margin: auto;
+}
 .game-list {
     text-align: center;
-    display: flex;
-    margin-left: 640px;
-    gap: 120px;
+    display: block;
+    margin: auto;
 }
 .game {
     background: #1b2838;
