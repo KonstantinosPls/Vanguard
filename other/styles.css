@@ -24,6 +24,7 @@ body {
 }
 
 header {
+    background-color: #1b1b1b;
     opacity:96%;
     height: 100px;
     display: flex;
@@ -92,7 +93,8 @@ nav a:hover {
     margin: 0;
 }
 footer {
-    background-color: #171a21;
+    background-color: #1b1b1b;
+    opacity:96%;
     text-align: center;
     padding: 10px;
     margin-top: 20px;
@@ -100,6 +102,10 @@ footer {
 footer a {
     color: #55c57a;
     text-decoration: none;
+}
+footer i {
+    padding: 10px;
+    color: white;
 }
 /* Settings stylesheet */
 h1 {
