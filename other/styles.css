@@ -66,9 +66,10 @@ video{
     display: flexbox;
     flex-direction: column;
     border: #983be4;
-    color: #363536;
+    color: #ffffff;
     flex-direction: row;
     border-radius: 50%;
+   
 }
 #bestGame{
     float: left;
