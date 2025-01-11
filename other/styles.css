@@ -5,34 +5,41 @@ body {
     background-image:url('../images/background.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
     color: #fdfeff;
 }
 .logo {
-    font-size: 25px;
+    font-size: larger;
+    font-weight: bold;
     position: relative;
     bottom: 10px;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
 }
-
 #imglogo{
     position: relative;
     top: 10px;
 }
 
 header {
-    opacity:75%;
-    background-color: #2e2f32;
-    padding: 15px;
+    opacity:96%;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header a {
+nav a {
+    font-size: medium;
+    font-weight: bold;
     color: #c7d5e0;
     text-decoration: none;
-    margin: 0 15px;
+    padding: 3px;
 }
-header a:hover {
+nav a:hover {
+    color: #986950;
     text-decoration: underline;
 }
 
