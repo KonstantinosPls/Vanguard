@@ -24,19 +24,22 @@ body {
 }
 
 header {
-    background-color: #171a21;
-    height: 100px;
+    background-color: #1b1b1b;
+    height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: 90%;
+
 }
 
 nav a {
-    font-size: medium;
-    font-weight: bold;
     color: #c7d5e0;
     text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
     padding: 3px;
+    
 }
 nav a:hover {
     color: #986950;
@@ -63,12 +66,11 @@ video{
     text-align: center;
 }
 .reviews{
-    display: flexbox;
-    flex-direction: column;
-    border: #983be4;
-    color: #ffffff;
+    margin-top: 1%;
     flex-direction: row;
-    border-radius: 50%;
+    border: #e7e5e9;
+    color: #ffffff;
+    background-color: #333;
    
 }
 #bestGame{
@@ -78,16 +80,14 @@ video{
     margin-bottom: 5px;
 }
 
-#salesBox{
-    border: 2px solid;
-    border-color: #1b1b1b;
-}
+
 #winterSale{
     width: 50%;
     height: 463px;
     float: left;
     display: block;
     margin: auto;
+    
 }
 .game-list {
     text-align: center;
@@ -349,13 +349,7 @@ main {
     margin: 0 auto;
     padding: 20px;
 }
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #1b1b1b;
-}
+
 header h1 {
     font-size: 36px;
     margin: 0;
@@ -725,22 +719,6 @@ header h1 {
     margin-right: 10px;
 }
 
-.search-container button {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.search-container button:hover {
-    background-color: #e55b00;
-}
-
-
-
 /* GAMES LIST  */
 .game-grid {
     display:grid;
@@ -788,3 +766,29 @@ header h1 {
     font-size: 0.9em;
     color:antiquewhite;
 }
+
+/* Cart Styling */
+
+.cart {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-items {
+    margin-bottom: 1rem;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  #empty-cart-msg {
+    font-style: italic;
+    color: #888;
+  }
