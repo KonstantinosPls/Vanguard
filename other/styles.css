@@ -45,6 +45,10 @@ nav a:hover {
     color: #986950;
     text-decoration: underline;
 }
+.active{
+    color: #986950;
+    text-decoration: underline;
+}
 
 video{
     width: 60%;
