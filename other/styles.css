@@ -373,6 +373,13 @@ header h1 {
     gap: 30px;
     margin-top: 20px;
 }
+.content h3{
+    color: #986950;
+    border: 2px solid;
+    border-color: #1b1b1b;
+    background-color: #1b1b1b;
+    text-align: center;
+}
 .sidebarhat {
     opacity: 90%;
     width: 30%;
@@ -389,6 +396,12 @@ header h1 {
 }
 .main-content p {
     line-height: 1.6;
+}
+.main-content .min{
+    color: darkred;
+}
+.main-content .max{
+    color: darkgreen
 }
 .features ul {
     list-style: none;
