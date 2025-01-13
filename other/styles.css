@@ -71,6 +71,7 @@ video{
     border: #e7e5e9;
     color: #ffffff;
     background-color: #333;
+    border-radius: 8px;
    
 }
 #bestGame{
@@ -78,6 +79,7 @@ video{
     width: 392px;
     margin-right: 5px;
     margin-bottom: 5px;
+    border-radius: 10%;
 }
 
 
@@ -87,6 +89,7 @@ video{
     float: left;
     display: block;
     margin: auto;
+    border-radius: 8px;
     
 }
 .game-list {
@@ -129,7 +132,7 @@ footer a {
 }
 footer i {
     padding: 10px;
-    color: white;
+    color:antiquewhite;
 }
 /* Settings stylesheet */
 h1 {
@@ -152,8 +155,8 @@ h1 {
     margin-bottom: 15px;
     border: 1px solid #3a4a5a;
     border-radius: 5px;
-    background-color: #1b2838;
-    color: #f2f4f6;
+    background-color: #333;
+    color:antiquewhite;
 }
 .settings-section button {
     padding: 10px 20px;
@@ -411,6 +414,7 @@ header h1 {
 .video-trailer {
     margin-top: 40px;
     text-align: center;
+    
 }
 .video-trailer h3 {
     font-size: 24px;
@@ -758,10 +762,13 @@ header h1 {
 /* SEARCH BAR STYLE */
 
 .search-container {
-    text-align: left;
+    text-align: center;
     padding: 20px;
     background-color: #333;
     opacity: 90%;
+    padding-bottom: 30px;
+    
+    
 }
 
 .search-container input {
@@ -771,6 +778,8 @@ header h1 {
     border: none;
     border-radius: 4px;
     margin-right: 10px;
+    color: lightsalmon;
+    background-color: #141414;
 }
 
 /* GAMES LIST  */
@@ -823,26 +832,104 @@ header h1 {
 
 /* Cart Styling */
 
-.cart {
-    max-width: 800px;
-    margin: 3rem auto;
-    padding: 2rem;
-    background-color: #333;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .cart-items {
-    margin-bottom: 1rem;
-  }
-  
-  .cart-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-  }
 
-  #empty-cart-msg {
-    font-style: italic;
-    color: #888;
-  }
+.cart {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    width: 70%;
+    color: lightsalmon;
+}
+
+.cart h2 {
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color:antiquewhite;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+}
+
+.cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-title {
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+
+.cart-item-price {
+    color: #b8b6b4;
+}
+
+.checkout-button {
+    background-color: #55c57a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    cursor: not-allowed;
+}
+.insufficient-button {
+    background-color: #55c57a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    cursor:pointer;
+}
+
+.remove-button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background-color: #c9302c;
+    cursor: not-allowed;
+}
+
+.cart-bottom {
+    margin-top: 20px;
+    text-align: right;
+    gap: 20px;
+}
+
+.total-price {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
