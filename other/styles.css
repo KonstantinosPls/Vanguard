@@ -45,6 +45,10 @@ nav a:hover {
     color: #986950;
     text-decoration: underline;
 }
+.active{
+    color: #986950;
+    text-decoration: underline;
+}
 
 video{
     width: 60%;
@@ -55,31 +59,31 @@ video{
 
 .containerindex{
     height: 50%;
-    width: 100%;
-    
+    width: 80%;
+    margin: auto;
 }
 .index {
     background-color:transparent;
-    padding: 20px;
     border-radius: 8px;
-    margin-bottom: 20px;
     text-align: center;
+    
+}
+.index i{
+    color: #986950;
 }
 .reviews{
-    margin-top: 1%;
     flex-direction: row;
     border: #e7e5e9;
     color: #ffffff;
-    background-color: #333;
-    border-radius: 8px;
-   
+    background-color: #1b1b1b;
+    border-radius: 20px;
+    padding: 1px;
+   margin-bottom: 40px;
 }
 #bestGame{
-    float: left;
-    width: 392px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    border-radius: 10%;
+    width: 600px;
+    margin-bottom: 2%;
+    border-radius: 8px;
 }
 
 
@@ -132,7 +136,7 @@ footer a {
 }
 footer i {
     padding: 10px;
-    color:antiquewhite;
+    color: white;
 }
 /* Settings stylesheet */
 h1 {
@@ -376,6 +380,13 @@ header h1 {
     gap: 30px;
     margin-top: 20px;
 }
+.content h3{
+    color: #986950;
+    border: 2px solid;
+    border-color: #1b1b1b;
+    background-color: #1b1b1b;
+    text-align: center;
+}
 .sidebarhat {
     opacity: 90%;
     width: 30%;
@@ -392,6 +403,12 @@ header h1 {
 }
 .main-content p {
     line-height: 1.6;
+}
+.main-content .min{
+    color: darkred;
+}
+.main-content .max{
+    color: darkgreen
 }
 .features ul {
     list-style: none;
@@ -414,7 +431,6 @@ header h1 {
 .video-trailer {
     margin-top: 40px;
     text-align: center;
-    
 }
 .video-trailer h3 {
     font-size: 24px;
@@ -762,13 +778,10 @@ header h1 {
 /* SEARCH BAR STYLE */
 
 .search-container {
-    text-align: center;
+    text-align: left;
     padding: 20px;
     background-color: #333;
     opacity: 90%;
-    padding-bottom: 30px;
-    
-    
 }
 
 .search-container input {
@@ -778,8 +791,6 @@ header h1 {
     border: none;
     border-radius: 4px;
     margin-right: 10px;
-    color: lightsalmon;
-    background-color: #141414;
 }
 
 /* GAMES LIST  */
@@ -829,6 +840,7 @@ header h1 {
     font-size: 0.9em;
     color:antiquewhite;
 }
+
 
 /* Cart Styling */
 
