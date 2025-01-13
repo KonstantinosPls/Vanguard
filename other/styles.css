@@ -59,29 +59,30 @@ video{
 
 .containerindex{
     height: 50%;
-    width: 100%;
-    
+    width: 80%;
+    margin: auto;
 }
 .index {
     background-color:transparent;
-    padding: 20px;
     border-radius: 8px;
-    margin-bottom: 20px;
     text-align: center;
+    
+}
+.index i{
+    color: #986950;
 }
 .reviews{
-    margin-top: 1%;
     flex-direction: row;
     border: #e7e5e9;
     color: #ffffff;
-    background-color: #333;
+    background-color: #1b1b1b;
+    border-radius: 20px;
+    padding: 1px;
    
 }
 #bestGame{
-    float: left;
-    width: 392px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    width: 600px;
+    margin-bottom: 2%;
 }
 
 
