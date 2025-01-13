@@ -778,10 +778,11 @@ header h1 {
 /* SEARCH BAR STYLE */
 
 .search-container {
-    text-align: left;
+    text-align: center;
     padding: 20px;
     background-color: #333;
     opacity: 90%;
+    padding-bottom: 50px;
 }
 
 .search-container input {
@@ -791,6 +792,8 @@ header h1 {
     border: none;
     border-radius: 4px;
     margin-right: 10px;
+    background-color: #1c1b1b;
+    color: lightsalmon;
 }
 
 /* GAMES LIST  */
